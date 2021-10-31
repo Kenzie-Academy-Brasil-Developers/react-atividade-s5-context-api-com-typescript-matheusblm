@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import "./style.css";
 const CardProduct = ({ item, remove }) => {
   const { deleteCart, addToCart } = useCart();
   return (
@@ -17,13 +17,13 @@ const CardProduct = ({ item, remove }) => {
           alt={item.title}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h6" component="div">
             {item.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {item.description}
           </Typography>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h6" component="div">
             R$ {item.price}
           </Typography>
         </CardContent>
